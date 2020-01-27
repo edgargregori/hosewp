@@ -29,4 +29,20 @@ h2. t2. Desarrollar puntos de partida estandar para cada componente del protyect
 h2· t3. Implementar un setup.py mínimo para cada componente del proyecto que complete una compilación del paquete fuente.
 h2. t4. Determinar si usar o no entornos virtuales Python para los componentes del proyecto, implementar estos, y documentar como se los puede reproducir.
 
+# Historia 3
+h3. .. como y donde escribir pruebas unitarias para el codigo base, para que pueda escribir pruebas unitarias despues de escribir el código. También asegurar que el ćodigo sea testeado a fondo.
+# Tareas:
+h3. t1. Definir los estandares/requisitos de las pruebas unitarias (covertura, valores estandar por tipo, etc.).
+h3. t2. Implementar un mecanismo para hacer cumplir esas normas (h3. t1.).
+h3. t3. Definir donde recidirá ese código de prueba en la estructura de un componente del proyecto.
+h3. t4. Implementar una prueba básica del nivel-superior para cada componente de proyecto que se ejecute sin fallas.
+
+# Historia 3
+h4. .. como integrar pruebas unitarias de un component dentro el proceso de compulación para que el proyecto tambien este pueda automaticamente ejecutar las pruebas unitarias.
+# Tareas:
+h4. t1. Determinar como integrar las pruebas unitarias en el proceso de compilación.
+h4. t2. Determinar como lidiar con la integración compilación/testeo en diferentes ambientes(de desarrollo).
+
+
+
 

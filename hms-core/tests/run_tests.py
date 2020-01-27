@@ -27,6 +27,7 @@ from test_hms_core import LocalSuite
 # Module functions                    #
 #######################################
 
+
 def main():
     results = unittest.TestResult()
     testStartTime = time.time()
@@ -34,11 +35,11 @@ def main():
     results.runTime = time.time() - testStartTime
     PrintTestResults(results)
     if not results.errors and not results.failures:
-        SaveTestReport(results, 'hms_core',
-            'hms_core.test-results')
+        SaveTestReport(results, "hms_core", "hms_core.test-results")
         sys.exit(0)
     else:
         sys.exit(1)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

@@ -28,9 +28,9 @@ __all__ = [
 # Module metadata/dunder-names        #
 #######################################
 
-__author__ = 'Brian D. Allbee'
-__copyright__ = 'Copyright 2018, all rights reserved'
-__status__ = 'Development'
+__author__ = "Brian D. Allbee"
+__copyright__ = "Copyright 2018, all rights reserved"
+__status__ = "Development"
 
 #######################################
 # Standard library imports needed     #
@@ -72,14 +72,14 @@ import PackagePath.ModuleName as ModuleName
 # decorator-methods                   #
 #######################################
 
+
 class testModuleNameCodeCoverage(ModuleCoverageTest):
-    _testNamespace = 'PackagePath'
+    _testNamespace = "PackagePath"
     _testModule = ModuleName
 
+
 LocalSuite.addTests(
-    unittest.TestLoader().loadTestsFromTestCase(
-        testModuleNameCodeCoverage
-   )
+    unittest.TestLoader().loadTestsFromTestCase(testModuleNameCodeCoverage)
 )
 
 #######################################
@@ -108,13 +108,15 @@ LocalSuite.addTests(
 # or run directly.                    #
 #######################################
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import time
+
     results = unittest.TestResult()
     testStartTime = time.time()
     LocalSuite.run(results)
     results.runTime = time.time() - testStartTime
     PrintTestResults(results)
     if not results.errors and not results.failures:
-        SaveTestReport(results, 'PackagePath.ModuleName',
-            'PackagePath.ModuleName.test-results')
+        SaveTestReport(
+            results, "PackagePath.ModuleName", "PackagePath.ModuleName.test-results"
+        )

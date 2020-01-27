@@ -32,9 +32,9 @@ __all__ = [
 # Module metadata/dunder-names        #
 #######################################
 
-__author__ = 'Brian D. Allbee'
-__copyright__ = 'Copyright 2018, all rights reserved'
-__status__ = 'Development'
+__author__ = "Brian D. Allbee"
+__copyright__ = "Copyright 2018, all rights reserved"
+__status__ = "Development"
 
 #######################################
 # Standard library imports needed     #
@@ -76,16 +76,16 @@ import hms_core as hms_core
 # decorator-methods                   #
 #######################################
 
+
 class testhms_coreCodeCoverage(ModuleCoverageTest):
-    # - Class constants that point to the namespace and module 
+    # - Class constants that point to the namespace and module
     #   being tested
-    _testNamespace = 'hms_core'
+    _testNamespace = "hms_core"
     _testModule = hms_core
 
+
 LocalSuite.addTests(
-    unittest.TestLoader().loadTestsFromTestCase(
-        testhms_coreCodeCoverage
-    )
+    unittest.TestLoader().loadTestsFromTestCase(testhms_coreCodeCoverage)
 )
 
 #######################################
@@ -114,13 +114,13 @@ LocalSuite.addTests(
 # or run directly.                    #
 #######################################
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import time
+
     results = unittest.TestResult()
     testStartTime = time.time()
     LocalSuite.run(results)
     results.runTime = time.time() - testStartTime
     PrintTestResults(results)
     if not results.errors and not results.failures:
-        SaveTestReport(results, 'hms_core',
-            'hms_core.test-results')
+        SaveTestReport(results, "hms_core", "hms_core.test-results")
