@@ -37,8 +37,8 @@ h3. t2. Implementar un mecanismo para hacer cumplir esas normas (h3. t1.).
 h3. t3. Definir donde recidirá ese código de prueba en la estructura de un componente del proyecto.
 h3. t4. Implementar una prueba básica del nivel-superior para cada componente de proyecto que se ejecute sin fallas.
 
-# Historia 3
-h4. .. como integrar pruebas unitarias de un component dentro el proceso de compulación para que el proyecto tambien este pueda automaticamente ejecutar las pruebas unitarias.
+# Historia 4
+h4. .. como integrar pruebas unitarias de un componente dentro el proceso de compilación para que el proyecto tambien este pueda automaticamente ejecutar las pruebas unitarias.
 # Tareas:
 h4. t1. Determinar como integrar las pruebas unitarias en el proceso de compilación.
 h4. t2. Determinar como lidiar con la integración compilación/testeo en diferentes ambientes(de desarrollo).
