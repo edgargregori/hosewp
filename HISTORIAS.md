@@ -2,7 +2,8 @@
 	El sistema-nivel del repositorio para el projecto hms_sys_app, de 'Hands on software engineering with Python.'
 ## configuracion inicial del proyecto con nvim y venv(ambiente virtual python).
 
-# Iteración ...:
+# Iteración de gestión del código y estructura  del proyecto: 
+# Objetivos:
 1. Repositorio maestro, almacenado en un servidor Git o servicio(GitHub), que contendra la estructura inicial completa del proyecto.
 
 2. Un componente proyecto para cada clase de biblioteca desplegable o aplicación en el sistema.
@@ -44,5 +45,69 @@ h4. t1. Determinar como integrar las pruebas unitarias en el proceso de compilac
 h4. t2. Determinar como lidiar con la integración compilación/testeo en diferentes ambientes(de desarrollo).
 
 
+# Iteración libreria clase hms_core. 
+#Objetivos:
+1. Paquete/Libreria hms_core.
+2. Testeado unitario.
+3. Capaz de ser construido como paquete independiente.
+4. Proporcionar base inicial de representación de las clases:
+	Artesanos, Clientes, Pedidos y productos. 
+
+# Historia 5
+h5. .. una definición comun y estructura funcional para representar las direcciones en el sistema, de modo que pueda incorporarlas en las partes del sistema que las necesitan:
+# Tareas
+para la Clase Abstracta Base(ABC) BaseAdress:
+h5. t1. .. definir.
+h5. t2. .. implementar.
+h5. t2. .. pruebas de unidad.
+
+# Historia 6
+h6. .. una definición comun y estructura funcional para representar los artesanos en el sistema, de modo que pueda incorporarlas en las partes del sistema que las necesitan:
+# Tareas
+para la Clase Abstracta Base(ABC) BaseArtisans:
+h6. t1. .. definir.
+h6. t2. .. implementar.
+h6. t2. .. pruebas de unidad.
+
+# Historia 7
+h7. .. una definición comun y estructura funcional para representar los clientes en el sistema, de modo que pueda incorporarlas en las partes del sistema que las necesitan:
+# Tareas
+para la Clase Abstracta Base(ABC) BaseCustomers:
+h7. t1. .. definir.
+h7. t2. .. implementar.
+h7. t2. .. pruebas de unidad.
+
+# Historia 8
+h8. .. una definición comun y estructura funcional para representar las pedidos en el sistema, de modo que pueda incorporarlas en las partes del sistema que las necesitan:
+# Tareas
+para la Clase Abstracta Base(ABC) BaseOrders:
+h8. t1. .. definir.
+h8. t2. .. implementar.
+h8. t2. .. pruebas de unidad.
+
+# Historia 9
+h9. .. una definición comun y estructura funcional para representar las productos en el sistema, de modo que pueda incorporarlas en las partes del sistema que las necesitan:
+# Tareas
+para la Clase Abstracta Base(ABC) BaseProducts:
+h9. t1. .. definir.
+h9. t2. .. implementar.
+h9. t2. .. pruebas de unidad.
+
+# Historia 10
+h10. Como un artesano, yo necesito la libreria de objetos del negocio a ser instalada con mi aplicación, ademas que funcione como sea necesario  sin instalar componentes de dependencias para este:
+#Tareas 
+h10. t1. Determinar si el empaquetado basado en setup.py puede incluir paquetes desde fuera de la estructura del proyecto local, y si se puede implementarlo.
+h10. t2. Caso contrario, implementar Makefile basado en el proceso para incluirlo en hms_core dentro de los proceso de empaquetado de otros proyectos.
+
+# Historia 11
+h11. Como usuario de la  oficina central, yo necesito la libreria de objetos del negocio a ser instalada con mi aplicación tal que la aplicación trabaje con lo necesario sin la necesidad de instalar componenetes de dependencias para este:
+# Tareas
+h11. t1. Verificar que el proceso de empaquetado/instalación de Artisan también trabaje para la instalación de la oficina central.
+
+# Historia 12
+h11. Como administrador de la  oficina central, yo necesito la libreria de objetos del negocio a ser instalada con mi aplicación tal que la aplicación trabaje con lo necesario sin la necesidad de instalar componenetes de dependencias para este:
+# Tareas
+h11. t1. Verificar que el proceso de empaquetado/instalación de Artisan también trabaje para la instalación de la oficina central.
 
 
+h10. t
